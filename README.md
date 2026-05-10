@@ -1,12 +1,14 @@
 ■ Notebook — Application de Gestion de Notes
 Application web complète permettant aux utilisateurs de créer, organiser et gérer leurs notes personnelles avec
 authentification sécurisée.
+
  Stack technique :
       • Backend : Laravel 11 + Sanctum
       • Frontend : React JS (Create React App)
       • Base de données : MySQL
       • UI : Tailwind CSS
       • Authentification API : Laravel Sanctum
+      
 ■ Fonctionnalités
      • Authentification complète (register / login / logout)
      • CRUD complet des notes
@@ -18,6 +20,7 @@ authentification sécurisée.
      • Toast notifications
      • Modal de confirmation
      • Protection des routes privées
+     
 ■ Installation Backend
       cd backend
       composer install
@@ -25,11 +28,13 @@ authentification sécurisée.
       php artisan key:generate
       php artisan migrate --seed
       php artisan serve
+      
 ■ Installation Frontend
       cd notebook
       npm install
       Créer le fichier .env
       npm start
+      
 ■ Endpoints API
 
      Méthode        Endpoint             Description                      Auth
@@ -42,14 +47,19 @@ authentification sécurisée.
       PUT         /api/notes/{id}       Modifier une note ■             nécessaire
       DELETE      /api/notes/{id}       Supprimer une note ■            nécessaire
 
+
       
 ■■ Commandes Utiles
+
    --> Backend :
         php artisan serve
         php artisan migrate
         php artisan migrate:fresh --seed
+        
   --> Frontend :
         npm start
         npm run build
+        
 ■■■ Auteur
+
        Projet développé dans le cadre d’un projet full-stack avec Laravel et React JS.
