@@ -3,37 +3,65 @@ Application web complète permettant aux utilisateurs de créer, organiser et g�
 authentification sécurisée.
 
  Stack technique :
+ 
       • Backend : Laravel 11 + Sanctum
+      
       • Frontend : React JS (Create React App)
+      
       • Base de données : MySQL
+      
       • UI : Tailwind CSS
+      
       • Authentification API : Laravel Sanctum
       
 ■ Fonctionnalités
+
      • Authentification complète (register / login / logout)
+     
      • CRUD complet des notes
+     
      • Recherche instantanée
+     
      • Tri par titre, date et priorité
+     
      • Dark mode / Light mode
+     
      • Responsive design
+     
      • Statistiques des notes
+     
      • Toast notifications
+     
      • Modal de confirmation
+     
      • Protection des routes privées
      
+     
 ■ Installation Backend
+
       cd backend
+      
       composer install
+      
       cp .env.example .env
+      
       php artisan key:generate
+      
       php artisan migrate --seed
+      
       php artisan serve
       
+      
 ■ Installation Frontend
+
       cd notebook
+      
       npm install
+      
       Créer le fichier .env
+      
       npm start
+      
       
 ■ Endpoints API
 
@@ -52,12 +80,17 @@ authentification sécurisée.
 ■■ Commandes Utiles
 
    --> Backend :
+   
         php artisan serve
+        
         php artisan migrate
+        
         php artisan migrate:fresh --seed
         
   --> Frontend :
+  
         npm start
+        
         npm run build
         
 ■■■ Auteur
